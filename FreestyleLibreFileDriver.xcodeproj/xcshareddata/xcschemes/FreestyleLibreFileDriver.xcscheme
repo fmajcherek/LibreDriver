@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9C31DE620239E6E007CDF12"
+               BuildableName = "FreestyleLibreFileDriverTest.xctest"
+               BlueprintName = "FreestyleLibreFileDriverTest"
+               ReferencedContainer = "container:FreestyleLibreFileDriver.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E9D3A48320225DD30099CCCD"
+            BuildableName = "FreestyleLibreFileDriver.driver"
+            BlueprintName = "FreestyleLibreFileDriver"
+            ReferencedContainer = "container:FreestyleLibreFileDriver.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
