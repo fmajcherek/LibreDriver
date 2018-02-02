@@ -121,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9C31DEC20239E6E007CDF12 /* Build configuration list for PBXNativeTarget "FreestyleLibreFileDriverTest" */;
 			buildPhases = (
+				E9C31DF8202482F2007CDF12 /* Update Carthage dependencies */,
 				E9C31DE320239E6E007CDF12 /* Sources */,
 				E9C31DE420239E6E007CDF12 /* Frameworks */,
 				E9C31DE520239E6E007CDF12 /* Resources */,
@@ -139,6 +140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9D3A48A20225DD30099CCCD /* Build configuration list for PBXNativeTarget "FreestyleLibreFileDriver" */;
 			buildPhases = (
+				E9C31DF72024823A007CDF12 /* Update Carthage dependencies */,
 				E9D3A48020225DD30099CCCD /* Sources */,
 				E9D3A48120225DD30099CCCD /* Frameworks */,
 				E9D3A48220225DD30099CCCD /* Resources */,
@@ -205,6 +207,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9C31DF72024823A007CDF12 /* Update Carthage dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Carthage dependencies";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "result=`carthage outdated --project-directory $PROJECT_DIR | grep \"All dependencies are up to date.\"`\n\nif [ \"$result\" != \"All dependencies are up to date.\" ]; then\n  carthage update --project-directory $PROJECT_DIR\nfi";
+		};
+		E9C31DF8202482F2007CDF12 /* Update Carthage dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Carthage dependencies";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "result=`carthage outdated --project-directory $PROJECT_DIR | grep \"All dependencies are up to date.\"`\n\nif [ \"$result\" != \"All dependencies are up to date.\" ]; then\ncarthage update --project-directory $PROJECT_DIR\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9C31DE320239E6E007CDF12 /* Sources */ = {
